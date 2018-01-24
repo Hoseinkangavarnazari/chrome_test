@@ -1,0 +1,28 @@
+{
+    "name": "IoT extention",
+    "description": "screen sharing extention & screen recording tool",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_title": "View screen sharing",
+        "default_popup": "index.html",
+        "default_icon": {
+            "18": "icon.png",
+            "32": "icon38.png"
+        },
+        "devtools_page": "devtools.html"
+    },
+    "chrome_url_overrides" : {
+        "newtab": "./startup.html"
+    },
+    "permissions": [
+        "tabs"
+      ], 
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    }
+   
+}
